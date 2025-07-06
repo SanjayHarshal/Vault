@@ -139,6 +139,7 @@ def action() :
     os.makedirs('Decrypted Files', exist_ok = True)
     os.makedirs('Key', exist_ok = True)
     os.makedirs('Password', exist_ok = True)
+    
     if not os.path.exists('Login.txt') :
         f = open('Login.txt', 'wb')
         f.close()
@@ -191,5 +192,6 @@ def action() :
                     print('\nPassword Confirmation Gone Wrong\n')
             else :
                 print('\nPlease Enter A Valid Password\n')
-            
-action()
+
+while True :
+    action()
